@@ -12,7 +12,7 @@ func main() {
 	var number int16 = 100 //int8, int16, int32, int64 AND int (based on your PC system for example 64bitz)
 	fmt.Println(number)
 
-	var number2 uint32 = 1000 //uint = unsigned int 
+	var number2 uint32 = 1000 //uint = unsigned int --> ONLY CONTAINS POSITIVE NUMBERS
 	fmt.Println(number2)
 
 	//alias
