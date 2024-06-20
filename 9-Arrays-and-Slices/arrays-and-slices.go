@@ -31,4 +31,16 @@ func main() {
 
 	array1[1] = "Position Changed"
 	fmt.Println(array1)
+
+	// INTERNAL ARRAYS
+	slice3 := make([]float32, 10, 11) // If you don't pass the last parameter 'Go' assumes that the second parameter is the capacity
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // lenght
+	fmt.Println(cap(slice3)) // capacity
+
+	slice3 = append(slice3, 5)
+	slice3 = append(slice3, 6) // here you would exceed the capacity but 'Golang' doubles it
+	fmt.Println(slice3)
+	fmt.Println(len(slice3)) // lenght
+	fmt.Println(cap(slice3)) // capacity
 }
