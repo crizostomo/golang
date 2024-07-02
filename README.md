@@ -7,3 +7,4 @@ go mod init "name-of-the-file"
 
 go get github.com/urfave/cli
 - This configs command line
+- go run main.go ip --host amazon.com.br
